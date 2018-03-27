@@ -38,7 +38,7 @@ class MessageService {
                             let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
                             self.channels.append(channel)
                             }
-                           print(self.channels[0].channelTitle)
+                           //print(self.channels[0].channelTitle)
                             completion(true)                    }
                 } catch {
                     print("")
@@ -50,25 +50,25 @@ class MessageService {
         }
     }
 
-    func createChannel(name: String!, description: String!, completion: @escaping CompletionHandler) {
-        
-        let body: [String : Any] = [
-            "name" : name,
-            "description" : description
-        ]
-        
-        Alamofire.request(URL_CREATE_CHANNELS, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
-            
-            if response.result.error == nil {
-                guard let data = response.data else { return }
-                
-                do {
-                    
-                }
-            }
-        }
-        
-    }
+//    func createChannel(name: String!, description: String!, completion: @escaping CompletionHandler) {
+//        
+//        let body: [String : Any] = [
+//            "name" : name,
+//            "description" : description
+//        ]
+//        
+//        Alamofire.request(URL_CREATE_CHANNELS, method: .post, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+//            
+//            if response.result.error == nil {
+//                guard let data = response.data else { return }
+//                
+//                do {
+//                    
+//                }
+//            }
+//        }
+//        
+//    }
 
 }
 
