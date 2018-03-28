@@ -18,6 +18,8 @@
 		9F321CAB2051E875009DB186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F321CA92051E875009DB186 /* LaunchScreen.storyboard */; };
 		9F321CB62051E875009DB186 /* SmackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F321CB52051E875009DB186 /* SmackTests.swift */; };
 		9F321CC12051E875009DB186 /* SmackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F321CC02051E875009DB186 /* SmackUITests.swift */; };
+		9F48A1A6206C1BAA00F3A288 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48A1A5206C1BAA00F3A288 /* Messages.swift */; };
+		9F48A1A8206C276300F3A288 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F48A1A7206C276300F3A288 /* KeyboardBoundView.swift */; };
 		9F4C1FE42051EF80008DC689 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C1FE22051EF80008DC689 /* SWRevealViewController.m */; };
 		9F4C1FEA205307F1008DC689 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C1FE9205307F1008DC689 /* ChatVC.swift */; };
 		9F4C1FEC20530803008DC689 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C1FEB20530803008DC689 /* ChannelVC.swift */; };
@@ -77,6 +79,8 @@
 		9F321CBC2051E875009DB186 /* SmackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F321CC02051E875009DB186 /* SmackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackUITests.swift; sourceTree = "<group>"; };
 		9F321CC22051E875009DB186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F48A1A5206C1BAA00F3A288 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Messages.swift; path = Smack/Services/Messages.swift; sourceTree = SOURCE_ROOT; };
+		9F48A1A7206C276300F3A288 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		9F4C1FE22051EF80008DC689 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		9F4C1FE32051EF80008DC689 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9F4C1FE52051F005008DC689 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 				9F079DCD205C797800BA39F0 /* AvatarCell.swift */,
 				9FB6E8CC206044920075AC81 /* UserAvatar.swift */,
 				9FED5C21206980DA00622B76 /* ChannelCell.swift */,
+				9F48A1A7206C276300F3A288 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				9FEB8B2C2065C12500BCF804 /* Channel.swift */,
+				9F48A1A5206C1BAA00F3A288 /* Messages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -589,6 +595,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F48A1A8206C276300F3A288 /* KeyboardBoundView.swift in Sources */,
 				9FED5C28206AC6F500622B76 /* SocketService.swift in Sources */,
 				9FADC8FB2065ABDC0073D962 /* ProfileVC.swift in Sources */,
 				9FED5C22206980DA00622B76 /* ChannelCell.swift in Sources */,
@@ -599,6 +606,7 @@
 				9F4C1FEA205307F1008DC689 /* ChatVC.swift in Sources */,
 				9FEB8B2B2065C0E400BCF804 /* MessageService.swift in Sources */,
 				9F2D30E8205C5A350012B25D /* UserDataService.swift in Sources */,
+				9F48A1A6206C1BAA00F3A288 /* Messages.swift in Sources */,
 				9FB6E8CD206044920075AC81 /* UserAvatar.swift in Sources */,
 				9FEFAA9320587DD4000E6106 /* CreateAccountVC.swift in Sources */,
 				9FEFAA962059BD06000E6106 /* AuthService.swift in Sources */,
