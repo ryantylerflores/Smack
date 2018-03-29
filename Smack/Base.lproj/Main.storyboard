@@ -589,15 +589,19 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="eTY-IF-cgP" eventType="editingChanged" id="gkT-g9-xfF"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-S4-Xyo">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
                                 <state key="normal" image="send"/>
                                 <connections>
+                                    <action selector="messageBoxEditing:" destination="eTY-IF-cgP" eventType="touchUpInside" id="ioI-AO-79J"/>
                                     <action selector="sendBtnPressed:" destination="eTY-IF-cgP" eventType="touchUpInside" id="f64-En-xRC"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iw1-rO-dvu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iw1-rO-dvu">
                                 <rect key="frame" x="0.0" y="77" width="375" height="520"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -605,10 +609,10 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4E1-Ih-CaL" id="dfT-WA-8Ko">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="84.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1rZ-9r-VX6">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1rZ-9r-VX6" customClass="UserAvatar" customModule="Smack" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="11" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="KP4-aL-Hpx"/>
@@ -678,6 +682,7 @@
                         <outlet property="channelNameLbl" destination="LMc-pP-vG0" id="Yqf-Oi-Gzb"/>
                         <outlet property="menuBtn" destination="m2C-qr-Bae" id="gXI-FY-ajS"/>
                         <outlet property="messageTxtBox" destination="3ko-XH-7d5" id="yRO-jR-U5h"/>
+                        <outlet property="sendBtn" destination="qbc-S4-Xyo" id="OlB-S7-OMV"/>
                         <outlet property="tableView" destination="iw1-rO-dvu" id="oxi-cE-ci2"/>
                     </connections>
                 </viewController>
